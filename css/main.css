@@ -1,0 +1,29 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+body{font:100%/1.4 Verdana,Arial,Helvetica,sans-serif;background:url(../images/bg.jpg) #cccccc;margin:0;padding:0;margin:0 auto;}
+h1,h2,h3,h4,h5,h6,p{margin-top:0;padding:0 15px;}
+h1{color:#500d0d;}
+a:link{color:#ffffff;text-decoration:none;font-weight:bold;}
+a:visited{color:#cccccc;}
+a:hover,a:active,a:focus{color:#777777;text-decoration:none;}
+.container{width:960px;background:url(../images/dark_leather.png) #cccccc;margin:0 auto;-webkit-box-shadow:2px 2px 3px 3px rgba(20, 20, 20, 0.8);box-shadow:2px 2px 3px 3px rgba(20, 20, 20, 0.8);}
+header{background-color:#000000;padding:5px 15px;}
+#navbar{float:left;width:160px;padding-bottom:10px;}
+li{list-style-type:none;}
+#main_content{background:url(../images/subtle_grunge.png) #cccccc;-webkit-box-shadow:1px 1px 2px 2px rgba(0, 0, 0, 0.5);box-shadow:1px 1px 2px 2px rgba(0, 0, 0, 0.5);padding:10px;width:760px;float:left;}
+footer{padding:10px 0;position:relative;clear:both;}
+footer p,#carousel p{color:#cccccc;}
+#home_page #home a,#albums_page #albums a,#tour_page #tour a,#contact_page #contact a{color:#777777;}
+.fltRight{float:right;}
+#myLinks a{padding:5px 21px;font-weight:bold;}
+#myLinks a:hover{color:#cccccc;}
+#carousel{background:url(../images/dark_leather.png) #cccccc;margin:20px;padding:30px;-webkit-box-shadow:1px 1px 2px 2px rgba(0, 0, 0, 0.5);box-shadow:1px 1px 2px 2px rgba(0, 0, 0, 0.5);border-radius:8px;text-align:center;}
+#tour_info{margin:0px auto;min-width:550px;}
+caption{font-size:1.3em;font-weight:bold;height:30px;color:#777777;background:url(../images/subtle_grunge.png) #cccccc;border:3px solid #777777;}
+th{width:200px;height:40px;font-size:1.1em;border:2px solid #777777;color:#ffffff;background:url(../images/dark_leather.png) #cccccc;}
+tbody{text-align:center;}
+table{border-collapse:collapse;}
+td{height:40px;border:2px solid #777777;}
+tr:nth-child(odd){color:#777777;background:url(../images/subtle_grunge.png) #cccccc;}
+tr:nth-child(even){color:#ffffff;background:url(../images/dark_leather.png) #cccccc;}
+#legend,select,label,textarea,input{display:inline;font:#777777;}
+.update #legend,.update select,.update label,.update textarea,.update input{display:block;font:#777777;}

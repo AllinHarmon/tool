@@ -1,0 +1,153 @@
+//less
+@red: #500d0d;
+@black: #000;
+@white: #fff;
+@ltGray: #ccc;
+@dkGray: #777;
+@dark_leather: url(../images/dark_leather.png) #ccc;
+@grunge: url(../images/subtle_grunge.png) #ccc;
+.box-shadow (@boxshadow: 1px 1px 2px 2px rgba(0, 0, 0, .5)) {
+  -webkit-box-shadow: @boxshadow; 
+  box-shadow: @boxshadow;
+}
+
+body {
+  font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+  background: url(../images/bg.jpg) #CCC;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  padding: 0 15px;
+}
+h1 {
+    color: @red;
+}
+a:link {
+  color: @white;
+  text-decoration: none;
+  font-weight:bold;
+}
+a:visited {
+  color: @ltGray;
+}
+a:hover,
+a:active,
+a:focus {
+  color: @dkGray;
+  text-decoration: none;
+}
+.container {
+  width: 960px;
+  background: @dark_leather;
+  margin: 0 auto;
+  .box-shadow(2px 2px 3px 3px rgba(20, 20, 20, .8);
+}
+header {
+  background-color: @black;
+  padding:5px 15px;
+}
+
+#navbar {
+  float: left;
+  width: 160px;
+  padding-bottom: 10px;
+}
+li {
+  list-style-type: none;
+}
+#main_content {
+  background: @grunge;
+  .box-shadow;
+  padding: 10px;
+  width: 760px;
+  float: left;
+}
+footer {
+  padding: 10px 0;
+  position: relative;
+  clear: both;
+}
+footer p, #carousel p {
+  color: @ltGray;
+}
+#home_page #home a,
+#albums_page #albums a,
+#tour_page #tour a,
+#contact_page #contact a {
+  color: @dkGray;
+}
+.fltRight {
+  float: right;
+}
+#myLinks a {
+  padding: 5px 21px;
+  font-weight:bold;
+}
+#myLinks a:hover {
+  color: @ltGray;
+}
+#carousel {
+  background: @dark_leather;
+  margin:20px;
+  padding: 30px;
+  .box-shadow;
+  border-radius: 8px;
+  text-align:center;
+}
+
+#tour_info {
+    margin:0px auto;
+	min-width:550px;
+}
+caption {
+	font-size: 1.3em;
+	font-weight: bold;
+	height: 30px;
+	color: @dkGray;
+	background: @grunge;
+	border: 3px solid @dkGray;
+}
+th {
+	width: 200px;
+	height: 40px;
+	font-size:1.1em;
+	border: 2px solid @dkGray;
+	color: @white;
+	background: @dark_leather;
+}
+tbody {
+	text-align: center;
+}
+table {
+    border-collapse:collapse;
+}
+td {	
+	height: 40px;
+	border: 2px solid @dkGray;
+}
+/*Found on http://davidwalsh.name/css-tables-css3-alternate-row-colors*/ 
+tr:nth-child(odd){ 
+    color: @dkGray;
+    background: @grunge; 
+}
+tr:nth-child(even){
+    color: @white;
+    background: @dark_leather;
+}
+#legend, select, label, textarea, input {
+    display:inline;
+    font:@dkGray;
+}
+.update #legend, .update select, .update label, .update textarea, .update input {
+    display:block;
+    font:@dkGray;
+}

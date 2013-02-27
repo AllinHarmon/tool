@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "tool1"
+AuthUserFile "/home/silvriv/.htpasswds/public_html/allinharmon.com/courses/imd410/tool/admin/passwd"
+require valid-user
