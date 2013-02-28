@@ -78,6 +78,18 @@
         <p id="caption">Undertow</p>
         
       </div> <!--Closes carousel-->
+      
+      <div>
+        <?php
+		  //loop thorugh $items and build div for each
+		  for($i = 0; $i < count($items); $i++)
+		  {
+			  echo '<div class="albumCovers">';
+			  echo $items[$i];
+			  echo '</div>';
+		  }      
+	    ?>
+      </div>
   
 <script src="js/main.js"></script>
   

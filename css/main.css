@@ -27,3 +27,4 @@ tr:nth-child(odd){color:#777777;background:url(../images/subtle_grunge.png) #ccc
 tr:nth-child(even){color:#ffffff;background:url(../images/dark_leather.png) #cccccc;}
 #legend,select,label,textarea,input{display:inline;font:#777777;}
 .update #legend,.update select,.update label,.update textarea,.update input{display:block;font:#777777;}
+.error {color:#500d0d;font-size:.7em;}
