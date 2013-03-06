@@ -1,17 +1,29 @@
 <?php
 	require_once('../inc/config.php');
+	if($page === 'home' || $page === 'studioAlbums' || $page === 'tourDates' || $page === 'contact')
+	{
+		$page = $tmp;	
+	}
+	else
+	{
+		$page = 'home';	
+	}
+	
+	
+	//catch user selection from drop down
+	$page = $_GET['p'];
 
 	//get all content related to this page (home)
 	$sql = "SELECT * 
 	FROM site_content 
-	WHERE page_name='home' 
-	AND section_name='intro'";
+	WHERE page_name='$page' 
+	AND section_name='$page'";
 	$myData = $db->query($sql);
 	
 	//create container for each piece of data
 	while($row = $myData->fetch_assoc())
 	{
-		if($row['section_name'] === 'intro')
+		if($row['section_name'] === $page)
 		{
 			$introTitle = $row['page_title'];
 			$introContent = $row['content'];
@@ -22,12 +34,13 @@
 	{
 		$user_content1 = mysqli_real_escape_string($db, $_POST['title']);
 		$user_content2 = mysqli_real_escape_string($db, $_POST['body']);
+		$page = mysqli_real_escape_string($db, $_POST['tmp']);
 		
 		
 		$sql = "UPDATE site_content
 		SET content='$user_content2', page_title='$user_content1'
-		WHERE page_name='home' 
-		AND section_name='intro'";
+		WHERE page_name='$page' 
+		AND section_name='$page'";
 		
 		$myData = $db->query($sql);
 
@@ -52,11 +65,11 @@
       <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
           <fieldset>
               <legend>Update Page Info</legend>
-      
-                  <select>
+      			  <input type="hidden" id="tmp" name="tmp" value="<?php echo $page ?>"	/>
+                  <select id="page" onchange="set_page(this)">
                       <option value="home" selected"home">Home</option>
                       <option value="studioAlbums">Albums</option>
-                      <option value="tour">Tour Dates</option>
+                      <option value="tourDates">Tour Dates</option>
                       <option value="contact">Contact Us</option>
                   </select>
                       
@@ -75,6 +88,14 @@
     </div><!--Closes main_content-->
 
   </div><!--Closes container-->
+
+<script>
+	function set_page(obj)
+	{
+		var page = obj.value;
+		window.location = './home_update.php?p='+page;
+	}
+</script>
 
 </body>
 </html>

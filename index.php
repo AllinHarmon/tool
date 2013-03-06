@@ -8,7 +8,7 @@
 	//create container for each piece of data
 	while($row = $myData->fetch_assoc())
 	{
-		if($row['section_name'] === 'intro')
+		if($row['section_name'] === 'home')
 		{
 			$introContent = $row['content'];
 		}
@@ -21,7 +21,7 @@
 	//create container for each piece of data
 	while($row = $myData->fetch_assoc())
 	{
-		if($row['section_name'] === 'intro')
+		if($row['section_name'] === 'home')
 		{
 			$introTitle = $row['page_title'];
 		}
