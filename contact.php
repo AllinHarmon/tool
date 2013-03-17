@@ -74,7 +74,7 @@
                   <input type="checkbox" name="friend" id="friend">
                 Friend</p>
                 <p>
-                    <label for="message">Message:</label><?php echo @$message_error; ?>
+                    <label for="message" class="block">Message:</label><?php echo @$message_error; ?>
                     <textarea cols="45" rows="7" id="message" name="message" placeholder="Write your message here." class="required"><?php echo @$message ?></textarea>
                 </p>
                 <p>

@@ -59,8 +59,8 @@
         
     <div id="main_content">
       
-      <?php echo $studioAlbumsTitle; ?>    
-      <?php echo $studioAlbumsContent; ?>
+	  <?php echo $studioAlbumsTitle; ?>        
+      
       <div id="carousel">
         <div id="myLinks">
         <?php
@@ -76,9 +76,11 @@
       
         <img src="images/undertow.jpg" id="placeholder" alt="gallery pic" />
         <p id="caption">Undertow</p>
-        
+              
       </div> <!--Closes carousel-->
   
+      <?php echo $studioAlbumsContent; ?>  
+      
 <script src="js/main.js"></script>
   
     </div> <!--Closes main_content-->
